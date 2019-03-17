@@ -65,4 +65,12 @@ $('.bg-modal.active').animate({
 console.log('elo');
 });
 
+// if ($(window).width() < 991) {
+//   $('.carousel-item img:nth-child(1)').attr('src','../img/cleaning1m.jpg');
+//   $('.carousel-item img:nth-child(2)').attr('src','../img/cleaning1m.jpg');
+//   $('.carousel-item img:nth-child()').attr('src','../img/cleaning1m.jpg');
+// }
+
+
+
 });
