@@ -30,7 +30,7 @@ html {
 
 body {
    background-color: $bgc;
-   max-width:1920px;
+   // max-width:1920px;
    margin:0 auto;
 }
 
@@ -47,6 +47,7 @@ a {
 }
 
 header {
+   // max-width:1920px;
    background: transparent;
    position: absolute;
    display: flex;
@@ -57,6 +58,7 @@ header {
 
    .logoContainer {
       background: transparent;
+      // max-width:1920px;
       display: flex;
       width: 100%;
       height: 100%;
@@ -88,6 +90,11 @@ header {
       right: 0;
       background-color: $bc1;
       transition: 0.3s;
+      // @media(min-width:1920px){
+      //    left:50%;
+      //    margin-left:700px;
+      //    clip: rect(0px, 220px, auto, 0);
+      // }
 
       &.active {
          width: 250px;
@@ -166,11 +173,15 @@ section.banner {
    div.bd-example {
     height: 100vh;
     position: absolute;
+    width:100%;
       div#carouselExampleCaptions {
          ol {
             margin-bottom: 250px;
             @media(max-width:991px){
                top: 150px;
+            }
+            @media(max-width:500px){
+               top: 200px;
             }
             
          }
@@ -191,17 +202,28 @@ section.banner {
                      left:5%;
                      right:5%;
                   }
+                  @media(max-width:500px){
+                     bottom:-180px;
+                     left:5%;
+                     right:5%;
+                  }
 
                   h5 {
                      font-size: 2rem;
                      letter-spacing: 0.2rem;
                      animation-delay: 0.2s;
+                     @media(max-width:500px){
+                        font-size:1.5rem;
+                     }
                   }
 
                   p {
                      padding-top: 30px;
                      font-size: 1.3rem;
                      animation-delay: 0.3s;
+                     @media(max-width:500px){
+                        font-size:1rem;
+                     }
                   }
 
                   button {
@@ -836,7 +858,7 @@ a.carousel-control-next {
       width: 100%;
       position: absolute;
       background-attachment: fixed;
-      background: url('../img/zdjęcia do galerii/nowa.jpg');
+      background: url('../img/zdj_galeria/nowa.jpg');
    	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -900,5 +922,20 @@ a.carousel-control-next {
       }
       h4{
          margin: 30px 0 15px 0;
+      }
+   }
+
+   section.banner{
+      h1{
+         font-size:2rem;
+         @media(max-width:500px){
+            font-size:1.5rem;
+         }
+      }
+      h2{
+         font-size:1.3rem;
+         @media(max-width:500px){
+            font-size:1rem;
+         }
       }
    }

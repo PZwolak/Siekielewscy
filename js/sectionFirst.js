@@ -65,29 +65,35 @@ $('.bg-modal.active').animate({
 console.log('elo');
 });
 $( window ).resize(function() {
+  if ($(window).width() > 990) {
+    $('.carousel-item:nth-child(1) img').attr('src','../img/zdj_banner/banner1.jpg');
+    $('.carousel-item:nth-child(2) img').attr('src','../img/zdj_banner/banner3.jpg');
+    $('.carousel-item:nth-child(3) img').attr('src','../img/zdj_banner/banner2.jpg');
+    $('.carousel-item:nth-child(4) img').attr('src','../img/zdj_banner/banner4.jpg');
+  }
   if ($(window).width() < 990) {
-    $('.carousel-item:nth-child(1) img').attr('src','../img/zdjecia na baner/banner1-900.jpg');
-    $('.carousel-item:nth-child(2) img').attr('src','../img/zdjecia na baner/banner3-900.jpg');
-    $('.carousel-item:nth-child(3) img').attr('src','../img/zdjecia na baner/banner2-900.jpg');
-    $('.carousel-item:nth-child(4) img').attr('src','../img/zdjecia na baner/banner4-900.jpg');
+    $('.carousel-item:nth-child(1) img').attr('src','../img/zdj_banner/banner1-900.jpg');
+    $('.carousel-item:nth-child(2) img').attr('src','../img/zdj_banner/banner3-900.jpg');
+    $('.carousel-item:nth-child(3) img').attr('src','../img/zdj_banner/banner2-900.jpg');
+    $('.carousel-item:nth-child(4) img').attr('src','../img/zdj_banner/banner4-900.jpg');
   }
   if ($(window).width() < 700) {
-    $('.carousel-item:nth-child(1) img').attr('src','../img/zdjecia na baner/banner1-700.jpg');
-    $('.carousel-item:nth-child(2) img').attr('src','../img/zdjecia na baner/banner3-700.jpg');
-    $('.carousel-item:nth-child(3) img').attr('src','../img/zdjecia na baner/banner2-700.jpg');
-    $('.carousel-item:nth-child(4) img').attr('src','../img/zdjecia na baner/banner4-700.jpg');
+    $('.carousel-item:nth-child(1) img').attr('src','../img/zdj_banner/banner1-700.jpg');
+    $('.carousel-item:nth-child(2) img').attr('src','../img/zdj_banner/banner3-700.jpg');
+    $('.carousel-item:nth-child(3) img').attr('src','../img/zdj_banner/banner2-700.jpg');
+    $('.carousel-item:nth-child(4) img').attr('src','../img/zdj_banner/banner4-700.jpg');
   }
   if ($(window).width() < 500) {
-    $('.carousel-item:nth-child(1) img').attr('src','../img/zdjecia na baner/banner1-500.jpg');
-    $('.carousel-item:nth-child(2) img').attr('src','../img/zdjecia na baner/banner3-500.jpg');
-    $('.carousel-item:nth-child(3) img').attr('src','../img/zdjecia na baner/banner2-500.jpg');
-    $('.carousel-item:nth-child(4) img').attr('src','../img/zdjecia na baner/banner4-500.jpg');
+    $('.carousel-item:nth-child(1) img').attr('src','../img/zdj_banner/banner1-500.jpg');
+    $('.carousel-item:nth-child(2) img').attr('src','../img/zdj_banner/banner3-500.jpg');
+    $('.carousel-item:nth-child(3) img').attr('src','../img/zdj_banner/banner2-500.jpg');
+    $('.carousel-item:nth-child(4) img').attr('src','../img/zdj_banner/banner4-500.jpg');
   }
   if ($(window).width() < 400) {
-    $('.carousel-item:nth-child(1) img').attr('src','../img/zdjecia na baner/banner1-400.jpg');
-    $('.carousel-item:nth-child(2) img').attr('src','../img/zdjecia na baner/banner3-400.jpg');
-    $('.carousel-item:nth-child(3) img').attr('src','../img/zdjecia na baner/banner2-400.jpg');
-    $('.carousel-item:nth-child(4) img').attr('src','../img/zdjecia na baner/banner4-400.jpg');
+    $('.carousel-item:nth-child(1) img').attr('src','../img/zdj_banner/banner1-400.jpg');
+    $('.carousel-item:nth-child(2) img').attr('src','../img/zdj_banner/banner3-400.jpg');
+    $('.carousel-item:nth-child(3) img').attr('src','../img/zdj_banner/banner2-400.jpg');
+    $('.carousel-item:nth-child(4) img').attr('src','../img/zdj_banner/banner4-400.jpg');
   }
 });
 $(window).resize();
